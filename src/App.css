@@ -1,0 +1,77 @@
+.todo-list {
+  margin: 50px;
+  font-family: sans-serif;
+  width: 300px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  padding: 17px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.list-item:last-child {
+  border-bottom: 1px solid lightgray;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.to-index {
+  text-transform: uppercase;
+  color: cornflowerblue;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.task-status {
+  font-size: 13px;
+  font-weight: normal;
+  color: gray;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.icon {
+  margin-left: 4px;
+  margin-right: 26px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.group > .icon {
+  background-image: url('/group.svg');
+}
+
+.complete > .icon  {
+  background-image: url('/completed.svg');
+}
+
+.complete > .item-text {
+  text-decoration: line-through;
+}
+
+.incomplete > .icon  {
+  background-image: url('/incomplete.svg');
+}
+
+.locked > .icon {
+  background-image: url('/locked.svg');
+}
+
+.locked > .item-text {
+  color: gray;
+}
